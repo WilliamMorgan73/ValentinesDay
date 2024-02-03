@@ -5,14 +5,24 @@ function noButton() {
   size += 10;
   document.getElementById("yesBtn").style.fontSize = size + "px";
 
-  // Change the text on the no button in a random way
   let noText = ["No", "Are you sure?", "Certain?", "Really?", ":(", "Pleasssseeee", "Rude", "Come onnnnnn"];
   let randomIndex = Math.floor(Math.random() * noText.length);
   document.getElementById("noBtn").innerHTML = noText[randomIndex];
 
-  // Keep track of how many times the no button is clicked
   count++;
+
+  // Add code to move the "No" button randomly
+  const noButton = document.getElementById("noBtn");
+  const maxX = window.innerWidth - noButton.offsetWidth;
+  const maxY = window.innerHeight - noButton.offsetHeight;
+  const newX = Math.random() * maxX;
+  const newY = Math.random() * maxY;
+
+  noButton.style.position = 'absolute'; // Make sure your CSS allows for this
+  noButton.style.left = `${newX}px`;
+  noButton.style.top = `${newY}px`;
 }
+
 
 // When Yes button is clicked, display fireworks and change screen
 function yesButton() {
