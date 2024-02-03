@@ -32,6 +32,20 @@ function yesButton() {
     // Change background color to match gif
     document.body.style.backgroundColor = "rgb(255, 223, 229)";
 
+    // Added a conditional statement to display the message, depending on how many times Lily clicks No
+    if (count > 0) {
+      let message;
+      if (count === 1) {
+        message = "You clicked 'No' once!";
+      } else {
+        message = "You clicked 'No' " + count + " times!";
+      }
+      document.getElementById("yesMessage").innerHTML = message;
+    }
+    
+    
+  
+
     //Now this is where shit gets interesting. Basically read the jsdeliver docs and copied this mathy crap: https://www.jsdelivr.com/package/npm/canvas-confetti
      // Trigger confetti burst
   var duration = 15 * 1000;
