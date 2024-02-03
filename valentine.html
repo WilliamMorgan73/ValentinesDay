@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Valentine's Day Proposal</title>
+
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <div class="main-container" id="mainContainer">
+    <img src="Images/giphy.gif" alt="Will you be my Valentine?">
+    <h1 class="text-center">Will you be my Valentine?</h1>
+    <button type="button" class="btn btn-success" onclick="yesButton()" id="yesBtn">Yes</button>
+    <button type="button" class="btn btn-danger" onclick="noButton()" id="noBtn">No</button>
+  </div>
+
+  <div class="yes-container" id="yesContainer" style="display: none;">
+    <img src="Images/yes.gif" alt="Yes">
+    <h1 class="text-center">I'm so happy you said yes!</h1>
+  </div>
+
+
+  <!-- Bootstrap JS-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS-->
+
+  <script src="Javascript/button.js"></script>
+</body>
+
+</html>
