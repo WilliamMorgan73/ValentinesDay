@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Valentine's Day Proposal</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Valentine's Day Proposal</title>
 
-  <!-- Custom CSS-->
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
 
-<body>
+    <!-- Basically added the confetti.js library  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-  <div class="main-container" id="mainContainer">
-    <img src="Images/giphy.gif" alt="Will you be my Valentine?">
-    <h1 class="text-center">Lily, will you be my Valentine?</h1>
-    <button type="button" class="btn btn-success" onclick="yesButton()" id="yesBtn">Yes</button>
-    <button type="button" class="btn btn-danger" onclick="noButton()" id="noBtn">No</button>
-  </div>
+  </head>
 
-  <div class="yes-container" id="yesContainer" style="display: none;">
-    <img src="Images/yes.gif" alt="Yes">
-    <h1 class="text-center">I'm so happy you said yes!</h1>
-    <h2 class="text-center">I love you Lily</h2>
-  </div>
+  <body>
 
+    <div class="main-container" id="mainContainer">
+      <img src="Images/giphy.gif" alt="Will you be my Valentine?">
+      <h1 class="text-center">Lily, will you be my Valentine?</h1>
+      <button type="button" class="btn btn-success" onclick="yesButton()"
+        id="yesBtn">Yes</button>
+      <button type="button" class="btn btn-danger" onclick="noButton()"
+        id="noBtn">No</button>
+    </div>
 
-  <!-- Bootstrap JS-->
+    <div class="yes-container" id="yesContainer" style="display: none;">
+      <img src="Images/yes.gif" alt="Yes">
+      <h1 class="text-center">I'm so happy you said yes!</h1>
+      <h2 class="text-center"
+        id="yesMessage"><!-- The message will be inserted here, it's just a blank class for a reason to include the yesMessage id without making small text appear --></h2>
+      <h2 class="text-center">I love you Lily</h2>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS-->
 
-  <!-- Custom JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <script src="Javascript/button.js"></script>
-</body>
+    <!-- Custom JS-->
+
+    <script src="Javascript/button.js"></script>
+  </body>
 
 </html>
